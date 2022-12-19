@@ -1,0 +1,55 @@
+/*-------------------------*\
+  #HERO
+\*-------------------------*/
+
+.hero {
+  position: relative;
+  background-color: var(--phthalo-green-2);
+  color: var(--white);
+  text-align: center;
+  padding-block: 200px 250px;
+  z-index: 1;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('../../assets/hero-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  mix-blend-mode: luminosity;
+  opacity: 0.15;
+  z-index: -1;
+}
+
+.hero-subtitle {
+  font-size: var(--fs-5);
+  font-weight: var(--fw-500);
+  line-height: 1;
+}
+
+.hero-title {
+  margin-block: 25px 40px;
+}
+
+.hero .btn-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.hero .abs-img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 40%);
+  animation: flyMove 1.25s ease-in-out infinite alternate;
+}
+
+@keyframes flyMovee {
+  0% {transform: translate(-50%, 40%);}
+  100% { transform: translate(-50%, 38%);}
+}
