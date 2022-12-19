@@ -49,7 +49,7 @@
   animation: flyMove 1.25s ease-in-out infinite alternate;
 }
 
-@keyframes flyMovee {
+@keyframes flyMove {
   0% {transform: translate(-50%, 40%);}
   100% { transform: translate(-50%, 38%);}
 }

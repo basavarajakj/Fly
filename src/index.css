@@ -246,3 +246,15 @@ body.active {
 	object-fit: cover;
 	transition: var(--transition-2);
 }
+
+.has-before,
+.has-after {
+	position: relative;
+	z-index: 1;
+} 
+
+.has-after::after,
+.has-before::before {
+	content: "";
+	z-index: -1;
+}
