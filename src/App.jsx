@@ -1,6 +1,7 @@
 import React from 'react';
 import About from './components/about/About';
 import Feature from './components/Feature/Feature';
+import Flight from './components/flight/Flight';
 import Header from './components/header/Header';
 import Hero from './components/hero/Hero';
 import Offer from './components/offer/Offer';
@@ -17,6 +18,7 @@ const App = () => {
 					<About />
 					<Feature />
 					<Offer />
+					<Flight />
 				</article>
 			</main>
 		</div>

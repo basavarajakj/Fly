@@ -265,4 +265,6 @@ body.active {
 	background-size: cover;
 }
 
-
+.w-100 {
+	width: 100%;
+}
