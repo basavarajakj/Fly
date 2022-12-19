@@ -1,0 +1,30 @@
+.offer-content {
+  background-image: url(../../assets/offer-bg.png);
+	background-color: var(--satin-sheen-gold);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	padding-inline: 15px;
+}
+
+.offer :is(.section-subtitle, .section-text) {
+	color: var(--medium-champagne);
+}
+
+.offer .section-text {
+	margin-block: 30px 40px;
+}
+
+.offer .btn {
+	background-color: var(--phthalo-green-2);
+}
+
+.offer .btn:is(:hover, :focus) {
+  background-color: var(--white);
+  color: var(--phthalo-green-2);
+}
+
+.offer-banner {
+  background-image: url(../../assets/offer-banner.jpg);
+  height: 500px;
+  background-color: var(--light-gray);
+}

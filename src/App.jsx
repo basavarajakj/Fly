@@ -3,6 +3,7 @@ import About from './components/about/About';
 import Feature from './components/Feature/Feature';
 import Header from './components/header/Header';
 import Hero from './components/hero/Hero';
+import Offer from './components/offer/Offer';
 import Service from './components/service/Service';
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
 					<Service />
 					<About />
 					<Feature />
+					<Offer />
 				</article>
 			</main>
 		</div>

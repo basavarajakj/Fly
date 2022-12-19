@@ -199,7 +199,7 @@ body.active {
 	text-transform: uppercase;
 	font-weight: var(--fw-700);
 	letter-spacing: 1px;
-	padding: 20px 60px;
+	padding: 20px 55px;
 	max-width: max-content;
 	border-radius: var(--radius-pill);
 	transition: var(--transition-1);
@@ -258,3 +258,11 @@ body.active {
 	content: "";
 	z-index: -1;
 }
+
+.has-bg-image {
+	background-repeat:  no-repeat;
+	background-position: 20%;
+	background-size: cover;
+}
+
+
