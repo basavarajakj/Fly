@@ -1,0 +1,36 @@
+.service {
+  background-color: var(--satin-sheen-gold);
+  padding-block-start: 220px;
+}
+
+.service-card {
+  --icon-color: var(--phthalo-green-2);
+  --text-color: var(--white);
+  --icon-scale: 1;
+
+  border: 1px solid var(--vegas-gold);
+  padding: 35px;
+  transition: var(--transition-1);
+}
+
+.service-card svg {
+  color: var(--icon-color);
+  font-size: 45px;
+  margin-block-end: 20px;
+  transform: scale(var(--icon-scale));
+  transition: var(--transition-1);
+}
+
+.service-card .card-title {
+  color: var(--text-color);
+  font-size: var(--fs-6);
+  text-transform: uppercase;
+  transition: var(--transition-1);
+}
+
+.service-card:is(:hover, :focus-within) {
+  background-color: var(--white);
+   --icon-color: var(--vegas-gold);
+  --text-color: var(--phthalo-green-2);
+  --icon-scale: 0.9 ;
+}

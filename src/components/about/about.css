@@ -1,0 +1,42 @@
+/*-------------------------*\
+  #ABOUT
+\*-------------------------*/
+
+.about .container {
+  display: grid;
+  gap: 60px;
+}
+
+.about .section-title {
+  margin-block-end: 30px;
+}
+
+.about-list {
+  margin-block: 30px 40px;
+}
+
+.about-list-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.about-list-item svg {
+  flex-shrink: 0;
+  font-size: 22px;
+  color: var(	--satin-sheen-gold);
+}
+
+.about-list-item .item-text {
+  color: var(--white);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-600);
+}
+
+.about-list-item:first-child {
+  margin-block-end: 6px;
+}
+
+.about-banner {
+  box-shadow: -40px 60px 0 -20px var(	--phthalo-green-3);
+}
