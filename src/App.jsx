@@ -2,6 +2,7 @@ import React from 'react';
 import About from './components/about/About';
 import Feature from './components/Feature/Feature';
 import Flight from './components/flight/Flight';
+import Footer from './components/Footer/Footer';
 import Header from './components/header/Header';
 import Hero from './components/hero/Hero';
 import NewsLetter from './components/newsLetter/NewsLetter';
@@ -21,6 +22,7 @@ const App = () => {
 					<Offer />
 					<Flight />
 					<NewsLetter />
+					<Footer />
 				</article>
 			</main>
 		</div>

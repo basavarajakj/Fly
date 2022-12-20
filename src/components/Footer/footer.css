@@ -1,0 +1,88 @@
+.footer {
+  background-image: url(../../assets/footer-bg.png);
+  background-color: var(--phthalo-green-2);
+  background-repeat: no-repeat;
+  background-position: center 85%;
+}
+
+.footer-top {
+  --section-padding: 90px;
+}
+
+.footer-text,
+.footer-list-title {
+  color: var(--white);
+}
+
+.footer-text {
+  font-size: var(--fs-5);
+  font-weight: var(--fw-500);
+  margin-block-start: 20px;
+}
+
+.footer-list-title {
+  font-size: var(--fs-6);
+  font-weight: var(--fw-700);
+  margin-block-end: 15px;
+}
+
+.footer-link {
+  margin-block-start: 5px;
+  transition: var(--transition-2);
+}
+
+.footer-link:is(:hover, :focus) {
+  color: var(--white);
+}
+
+.footer-list-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-block-start: 12px;
+}
+
+.footer-list-item svg {
+  flex-shrink: 0;
+  color: var(--satin-sheen-gold);
+}
+
+.footer-list-item .footer-link { margin-block-start: 0;}
+
+.footer-list-item:is(.footer-link, .address) {
+  font-size: var(--fs-7);
+}
+
+.footer-list-item .footer-link:is(:hover, :focus) {
+  color: var(--satin-sheen-gold);
+}
+
+.footer-bottom {
+  border-block-start: 1px solid var(--white_10);
+  padding-block: 30px;
+  text-align: center;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-block-start: 15px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--british-racing-green);
+  color: var(--white);
+  padding: 12px;
+  border-radius: var(--radius-circle);
+  transition: var(--transition-2);
+}
+
+.social-link:is(:hover, :focus) {
+  background-color: var(--white);
+  color: var(--satin-sheen-gold);
+}
+
