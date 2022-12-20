@@ -1,0 +1,33 @@
+.newsletter {
+  background-image: url(../../assets/newsletter-bg.png);
+  background-color: var(--satin-sheen-gold);
+  background-size: auto;
+  background-position: left bottom;
+}
+
+.newsletter .container {
+  display: grid;
+  gap: 40px;
+}
+
+.newsletter .section-subtitle {
+  color: var(--medium-champagne);
+}
+
+.newsletter .input-field {
+  background-color: var(--white);
+  padding: 23px;
+  padding-inline-start: 40px;
+  border-radius: var(--radius-pill);
+  outline: none;
+  margin-block-end: 20px;
+}
+
+.newsletter .btn {
+  background-color: var(--phthalo-green-2);
+  color: var(--white);
+  padding-block: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

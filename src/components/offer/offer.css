@@ -1,5 +1,5 @@
 .offer-content {
-  background-image: url(../../assets/offer-bg.png);
+  background-image: url('../../assets/offer-bg.png');
 	background-color: var(--satin-sheen-gold);
 	background-repeat: no-repeat;
 	background-position: bottom;

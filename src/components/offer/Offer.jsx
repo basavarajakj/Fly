@@ -20,9 +20,7 @@ const Offer = () => {
 					</a>
 				</div>
 			</div>
-			<div
-				className="offer-banner has-bg-image"
-				style={{ backgroundImage: `${offerBanner}` }}></div>
+			<div className="offer-banner has-bg-image"></div>
 		</section>
 	);
 };
