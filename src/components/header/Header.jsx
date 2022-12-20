@@ -77,6 +77,14 @@ const Header = () => {
 								href="#"
 								className="navbar-link"
 								onClick={() => setToggle(false)}>
+								Shop
+							</a>
+						</li>
+						<li className="navbar-item">
+							<a
+								href="#"
+								className="navbar-link"
+								onClick={() => setToggle(false)}>
 								Contact
 							</a>
 						</li>

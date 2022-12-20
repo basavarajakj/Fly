@@ -193,7 +193,6 @@ body.active {
 	letter-spacing: -2px;
 }
 
-
 .btn {
 	font-size: var(--fs-8);
 	text-transform: uppercase;
@@ -251,20 +250,376 @@ body.active {
 .has-after {
 	position: relative;
 	z-index: 1;
-} 
+}
 
 .has-after::after,
 .has-before::before {
-	content: "";
+	content: '';
 	z-index: -1;
 }
 
 .has-bg-image {
-	background-repeat:  no-repeat;
+	background-repeat: no-repeat;
 	background-position: 20%;
 	background-size: cover;
 }
 
 .w-100 {
 	width: 100%;
+}
+
+/*-------------------------*\
+  #MEDIA QUERY
+\*-------------------------*/
+
+/**
+  * Responsive design for larger than 575px screen
+  */
+@media (min-width: 575px) {
+	/**
+   * REUSED STYLE
+   */
+
+	.container {
+		max-width: 540px;
+		width: 100%;
+		margin-inline: auto;
+	}
+
+	/**
+   * HEADER
+   */
+
+	.header .container {
+		max-width: unset;
+	}
+}
+
+/**
+  * Responsive design for larger than 768px screen
+  */
+@media (min-width: 768px) {
+	/**
+   * CUSTOME PROPERTY
+   */
+
+	:root {
+		/**
+   * Typography
+   */
+
+		--fs-1: 10rem;
+		--fs-2: 5rem;
+		--fs-4: 3rem;
+	}
+	/**
+   * Reused style
+   */
+	.container {
+		max-width: 720px;
+	}
+
+	.h1 {
+		line-height: 0.9;
+	}
+
+	.grid-list {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	:is(.feature, .flight) .grid-list li:first-child {
+		grid-column: 1/3;
+	}
+
+	/**
+   * HEADER
+   */
+
+	.header-action-btn:not(.nav-open-btn) {
+		display: block;
+		color: var(--white);
+	}
+
+	.header-action {
+		display: flex;
+		gap: 15px;
+	}
+
+	/**
+   * HERO
+   */
+
+	.hero {
+		padding-block-start: 224px;
+	}
+
+	/**
+   * About
+   */
+
+	.about .container {
+		max-width: 600px;
+	}
+
+	/**
+   * FEATURE
+   */
+
+	.feature-content {
+		padding: 50px;
+	}
+
+	.feature .section-title {
+		max-width: 11ch;
+	}
+
+	/**
+   * NEWSLETTER
+   */
+
+	.newsletter-form {
+		position: relative;
+	}
+
+	.newsletter .btn {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		bottom: 10px;
+	}
+
+	/**
+   * FOOTER
+   */
+
+	.footer-bottom {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.social-list {
+		margin-block-start: 0;
+	}
+}
+
+/**
+  * Responsive design for larger than 992px  screen
+  */
+@media (min-width: 992px) {
+	/**
+   * CUSTOME PROPERTY
+   */
+
+	:root {
+		/**
+   * Typography
+   */
+		--fs-4: 2.5rem;
+	}
+
+	/**
+   * Reused style
+   */
+
+	.container {
+		max-width: 960px;
+	}
+
+	/**
+   * FEATURES
+   */
+	.feature .grid-list li:first-child {
+		grid-column: auto;
+	}
+	.feature .grid-list {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.feature-content {
+		padding: 20px;
+	}
+
+	.feature .section-title {
+		max-width: unset;
+	}
+
+	.feature-card {
+		aspect-ratio: unset;
+		height: 100%;
+	}
+
+	/**
+   * OFFER
+   */
+
+	.offer {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	.offer-banner {
+		height: unset;
+	}
+
+	/**
+   * FLIGHT
+   */
+
+	.flight-content {
+		max-width: 70%;
+	}
+
+	.flight-card .card-title {
+		padding-inline: 60px;
+	}
+
+	/**
+   * NEWSLETTER
+   */
+
+	.newsletter .container {
+		grid-template-columns: 0.8fr 1fr;
+		align-items: center;
+	}
+}
+
+/**
+  * Responsive design for larger than 1200px  screen
+  */
+@media (min-width: 1200px) {
+	/**
+   * CUSTOME PROPERTY
+   */
+
+	:root {
+		/**
+   * Typography
+   */
+		--fs-4: 3rem;
+	}
+
+	/**
+   * REUSED STYLE 
+   */
+
+	.container {
+		max-width: 1200px;
+	}
+
+	.h1 {
+		letter-spacing: 10px;
+	}
+
+	.grid-list {
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	/**
+   * HEADER
+   */
+
+	.nav-open-btn,
+	.navbar-top,
+	.overlay {
+		display: none;
+	}
+
+	.navbar,
+	.navbar.active,
+	.navbar-list,
+	.navbar-item {
+		all: unset;
+	}
+
+	.navbar-list {
+		display: flex;
+		align-items: center;
+		gap: 80px;
+	}
+
+	.navbar-link {
+		--fs-8: 1.5rem;
+		text-transform: uppercase;
+		font-weight: var(--fw-700);
+		transition: var(--transition-1);
+	}
+
+	.navbar-link:is(:hover, :focus) {
+		color: var(--satin-sheen-gold);
+	}
+
+	/**
+   * ABOUT
+   */
+
+	.about .container {
+		max-width: 1200px;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.about-banner {
+		margin-inline: 50px;
+	}
+
+	/**
+   * FEATURE
+   */
+
+	.feature-content {
+		padding: 50px;
+	}
+
+	.feature .section-title {
+		max-width: 11ch;
+	}
+
+	.feature-card {
+		background-size: 105%;
+	}
+
+	.feature-card:is(:hover, :focus-within) {
+		background-size: 110%;
+	}
+
+	/**
+   * OFFER
+   */
+
+	.offer-content {
+		padding-inline-end: 100px;
+	}
+
+	.feature-content .container {
+		max-width: 500px;
+		margin-inline: auto 0;
+	}
+
+	/**
+   * FLIGHT
+   */
+
+	.flight .grid-list li:first-child {
+		grid-column: auto;
+	}
+
+	.flight .grid-list {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.flight-content {
+		max-width: unset;
+	}
+
+	/**
+   * FOOTER
+   */
+
+	.footer-top {
+		grid-template-columns: 1fr 0.4fr 0.4fr 0.6fr;
+	}
+
+	.footer-text {
+		margin-inline-end: 80px;
+	}
 }
